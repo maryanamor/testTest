@@ -1,0 +1,300 @@
+﻿.header{
+    background-color: #414351;
+    padding: 20px;
+}
+.logo{
+    width: 170px;
+    height: 50px;
+}
+.logo img{
+    width: 100%;
+    height: auto;
+}
+img {
+	max-width: 100%;
+}
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 0;
+    padding-top: 20px;
+    padding-right: 30px;
+}
+.menu li a{
+    font-size: 14px;
+    outline: none;
+    font-weight: 600;
+    color: #fff;
+    padding: 0 10px;
+    text-decoration: none;
+    font-family: "Montserrat";
+
+}
+footer{
+    color: #fff;
+    background-color: #414351;
+    padding: 15px;
+}
+.hot-it-works-main-block {
+    background: #fff; 
+    text-align: center; 
+    padding-top: 50px; 
+    padding-bottom: 50px;
+}
+.hot-it-works-main-block h1 {
+    font-size: 50px; 
+    line-height: 60px; 
+    margin-bottom: 0; 
+    color: #F49819;
+    text-transform: uppercase; 
+    font-weight:800;
+}
+.hot-it-works-main-block h2 {
+    font-size: 30px; 
+    line-height: 36px; 
+    color: #b2b2b2; 
+    padding-top:0; 
+    padding-bottom: 0; 
+    font-family: "Montserrat"; 
+    font-weight: bold;
+}
+.hot-it-works-main-block .svg-wr {
+    height: 55px;
+}
+.hot-it-works-main-block .svg-wr img {
+    width: 50px;
+}
+.hot-it-works-main-block h3 {
+    font-size: 25px; 
+    line-height: 30px; 
+    font-family: "Montserrat"; 
+    font-weight: bold; color: #36A9E1; 
+    text-transform: uppercase;
+}
+.hot-it-works-main-block p {
+    font-size: 16px; 
+    line-height: 20px; 
+    color: #b2b2b2; 
+    font-family: "Montserrat"; 
+    font-weight: 200;
+    max-width: 300px; 
+    margin: 0 auto;
+}
+
+
+.plans_pricing_outher {
+	box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	font-size: 0; 
+	padding: 0 50px;
+}
+.plans_pricing_outher .plans_pricing-block-wr {
+	display: inline-block; 
+	width: 33.3333%;
+}
+.plans_pricing_outher .plans_pricing-block {
+	margin: 0 5px;
+}
+.how-it-accordion {
+	background: #fff; 
+	padding-top: 50px; 
+	padding-bottom: 50px;
+}
+.how-it-accordion h2 {
+	text-align: center; 
+	width: 100%; 
+	color: #F08300; 
+	font-family: "Montserrat"; 
+	font-weight:800; 
+	font-size: 40px; 
+	line-height: 50px; 
+	padding-top: 0;
+	padding-bottom: 0; 
+	margin-bottom: 30px;
+}
+.how-it-acc-but-wr:first-child {
+	margin-top:15px;
+}
+.how-it-acc-but-wr a {
+	margin-bottom: 20px; 
+	padding: 0 30px; 
+	font-size: 13px; 
+	line-height: 30px; 
+	border: 1px solid #F08300; 
+	transition: all 0.4s; 
+	-webkit-transition: all 0.4s; 
+	display: inline-block; 
+	border-radius: 25px; 
+	font-family: "Montserrat"; 
+	font-weight: bold; 
+	text-transform: uppercase;
+}
+.how-it-acc-but-orange {
+	color: #fff; 
+	background-color: #F08300;
+}
+.how-it-acc-but-orange:hover {
+	color: #fff;
+}
+.how-it-acc-but-white {
+	color: #F08300; 
+	background-color: #fff;
+}
+.how-it-acc-but-wr .how-it-acc-but-white:hover, 
+.how-it-acc-but-wr .how-it-acc-but-orange:hover {
+	opacity: 0.85;
+}
+.how-it-accordion-part h4 {
+	font-size: 21px; 
+	line-height: 25px; 
+	color: #828282; 
+	font-family: "Montserrat"; 
+	font-weight: bold; 
+	text-transform: uppercase; 
+	transition: all 0.4s; 
+	cursor: pointer;
+}
+.how-it-accordion-part.active h4, .how-it-accordion-part h4:hover {
+	color: #3F3C49; 
+}
+.how-it-accordion-part.active h4 {
+	cursor: default;
+}
+.how-it-accordion-part .how-it-accordion-part-cont {
+	display: none; 
+	padding-bottom: 30px;
+}
+.how-it-accordion-part p {
+	font-family: "Montserrat"; 
+	font-weight:300; font-size: 17px; line-height: 22px; color: #3F3C49; margin-left: 30px; margin-bottom: 5px;}
+.how-it-accordion-part p span {
+	font-family: "Montserrat"; 
+	font-weight:300; 
+	font-size: 17px; 
+	line-height: 22px;
+	 }
+.how-it-accordion-part h4 span {
+	width: 20px; 
+	height: 20px; 
+	border: 1px solid #000; 
+	border-radius: 50%; 
+	display: inline-block; 
+	margin-right: 10px; 
+	vertical-align: middle; 
+	position: relative;
+}
+.how-it-accordion-part h4 span:before, 
+.how-it-accordion-part h4 span:after {
+	position: absolute; 
+	top: 50%; 
+	left: 50%; 
+	width: 1px; 
+	height: 10px; 
+	content: ''; background: #000;}
+.how-it-accordion-part h4 span:before {
+	transform: translate(-50%, -50%); 
+	-webkit-transform: translate(-50%, -50%);
+}
+.how-it-accordion-part h4 span:after {
+	transform: translate(-50%, -50%) rotate(90deg); 
+	-webkit-transform: translate(-50%, -50%) rotate(90deg);
+}
+.how-it-accordion-part a {
+	font-family: "Montserrat";  
+	font-weight: 500; 
+	color: #36A9E1; 
+	display: block; 
+	margin-left: 30px; 
+	transition: all 0.4s;
+}
+.how-it-accordion-part a:hover {
+	color: #3F3C49;
+}
+.how-it-accordion-part {
+	margin-bottom: 10px;
+}
+.how-it-acc-img-wr {
+	display: none;
+}
+.how-it-acc-img-wr.active {
+	display: block;
+} 
+.how-it-line {
+	background: #3F3C49; 
+	padding: 30px 0;
+}
+
+
+@media screen and (max-width: 1599px) {
+    .meals-line-start h2 {
+    	font-size: 24px; 
+    	line-height: 30px;
+    }
+    .meals-line-start h2 span {
+    	font-size: 18px; 
+    	line-height: 30px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .how-blue-content {
+    	padding: 50px 30px 30px;
+    }
+    .how-it-works-partners {
+    	padding-bottom: 30px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .how-blue-content {
+    	padding: 30px 15px 15px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .hot-it-works-main-block p {
+    	max-width: 100%; 
+    	margin-bottom: 15px;
+    }
+    .hot-it-works-main-block h1 {
+    	font-size: 32px; 
+    	line-height: 40px;
+    }
+    .hot-it-works-main-block h2 {
+    	font-size: 24px; 
+    	line-height: 30px;
+    }
+    .hot-it-works-main-block h3 {
+    	font-size: 20px; 
+    	line-height: 24px;
+    }
+    .how-it-accordion h2 {
+    	font-size: 32px; 
+    	line-height: 40px;
+    }
+    .how-it-accordion {
+    	padding-top:0;
+    }
+    .how-it-accordion-part h4 {
+    	font-size: 18px; 
+    	line-height:24px;
+    }
+    .how-it-accordion-part a {
+    	padding-left: 0;
+    }
+    .how-it-acc-but-wr {
+    	text-align: center;
+    }
+    .how-blue h3 {
+    	font-size: 30px; 
+    	line-height: 36px;
+    }
+    .how-quote {
+    	font-size: 24px; 
+    	line-height: 30px;
+    }
+    .how-it-acc-img-wr {
+    	text-align: center; 
+    	margin-bottom: 10px;
+    }
+}
+
