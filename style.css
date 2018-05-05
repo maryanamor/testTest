@@ -225,7 +225,158 @@ footer{
 	background: #3F3C49; 
 	padding: 30px 0;
 }
-
+.plans_pricing {
+    background: #ef9020; 
+    text-align: center; 
+    padding: 50px 0;
+}
+.plans_pricing h4 {
+    font-family: "Montserrat"; 
+    font-weight: bold; 
+    font-size: 28px; 
+    line-height: 34px; 
+    text-transform: uppercase; 
+    color: #fff; 
+}
+.plans_pricing .plans_pricing_subtitle {
+    font-family: "Montserrat";
+    font-weight: 200; 
+    font-size: 20px; 
+    line-height: 24px; 
+    color: #fff; 
+    margin-top: 10px; 
+    margin-bottom: 40px;
+}
+.plans_pricing_divider {
+    width:200px; 
+    height: 1px; 
+    background: #fff; 
+    display: block;
+    margin: 0 auto 15px;
+}
+.plans_pricing h5 {
+    font-family: "Montserrat"; 
+    font-weight: bold; 
+    font-size: 16px; 
+    line-height:20px; 
+    padding: 20px 0; 
+    border-top: 1px solid #b2b2b2; 
+    border-bottom: 1px solid #b2b2b2; 
+    color: #363942; 
+    margin: 0 15px;
+}
+.plans_pricing-block > span {
+    display: block; 
+    text-align: center; 
+    color: #201600; 
+    font-family: "Montserrat";
+    font-weight:300px; 
+    font-size: 16px; 
+    line-height: 20px; 
+    margin: 20px 0;
+}
+.plans_pricing-price {
+    font-size: 16px; 
+    color: #201600; 
+    font-family: "Montserrat"; 
+    font-weight: 500; 
+    line-height: 30px; 
+    margin-bottom: 30px;
+}
+.plans_pricing-price span {
+    font-size: 30px; 
+    line-height: 30px; 
+    font-family: "Montserrat"; 
+    font-weight:800;
+}
+.plans_pricing-block li, 
+.plans_pricing-block p {
+    font-family: "Montserrat"; 
+    font-weight:300; 
+    font-size: 16px; 
+    line-height: 20px; 
+    color: #6b6966; 
+    margin-bottom: 0;
+}
+.plans_pricing-block p span {
+    display: inline-block; 
+    width: 3px; 
+    height: 3px; 
+    background:#6b6966; 
+    vertical-align: middle; 
+    margin-right: 5px; 
+    border-radius: 50%;
+}
+.plans_pricing-but {
+    text-align: center; 
+    padding-bottom: 30px; 
+    margin-top: 30px;
+}
+.plans_pricing-but a {
+    display: block; 
+    color: #fff; 
+    text-transform: uppercase; 
+    border: 1px solid #de8144;
+    background-color: #de8144; 
+    line-height: 35px; 
+    vertical-align: top;  
+    font-family: "Montserrat";  
+    font-size: 16px;  
+    font-weight: 500;  
+    padding: 0 10px;  
+    border-radius: 30px;  
+    transition: all 0.4s;  
+    -webkit-transition: all 0.4s;  
+    margin: 0 15px;
+}
+.plans_pricing-but a:hover {
+    opacity: 0.85;
+}
+.plans_pricing .swiper-wrapper {
+    padding-bottom:50px;
+}
+.plans_pricing-block {
+    background: #fff; 
+    padding: 80px 15px 0; 
+    border-radius: 20px; 
+    position: relative;
+} 
+.plans_pricing-block img {
+    position: absolute; 
+    top:-100px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    -webkit-transform: translateX(-50%); 
+    width: 60%;
+}
+.plans_pricing .swiper-pagination-bullet {
+    border-color:  #fff !important; 
+    background: transparent !important; 
+    opacity: 1; 
+    border: 1px solid #fff;
+}
+.plans_pricing .swiper-pagination-bullet-active {
+    background: #fff !important;
+}
+.swiper-button-prev {
+    background-image: url(https://www.trifectanutrition.com/hubfs/TrifectaNutrition_Dec2016%20_heme/Landing-images-2017/SVG-icons/Asset%206.svg);
+}
+.swiper-button-next {
+    background-image: url(https://www.trifectanutrition.com/hubfs/TrifectaNutrition_Dec2016%20_heme/Landing-images-2017/SVG-icons/Asset%207.svg);
+}
+.plans_pricing_outher {
+    box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    font-size: 0; 
+    padding: 0 50px;
+}
+.plans_pricing_outher .plans_pricing-block-wr {
+    display: inline-block; 
+    width: 33.3333%;
+}
+.plans_pricing_outher .plans_pricing-block {
+    margin: 0 5px;
+}
 
 @media screen and (max-width: 1599px) {
     .meals-line-start h2 {

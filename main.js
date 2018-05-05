@@ -6,8 +6,54 @@
         winH = $(window).height();
     };
     var initIterator = 0;
+    
+    _functions.initSwiper = function(){
+        $('.swiper-container').not('.initialized').each(function(){                               
+            var $t = $(this);                                 
 
-    $( document ).ready(function() {        
+            var index = 'swiper-unique-id-'+initIterator;
+
+            $t.addClass('swiper-'+index+' initialized').attr('id', index);
+            $t.find('>.swiper-pagination').addClass('swiper-pagination-'+index);
+            $t.parent().find('>.swiper-button-prev').addClass('swiper-button-prev-'+index);
+            $t.parent().find('>.swiper-button-next').addClass('swiper-button-next-'+index);
+
+            var slidesPerViewVar = ($t.data('slides-per-view'))?$t.data('slides-per-view'):1;
+            if(slidesPerViewVar!='auto') slidesPerViewVar = parseInt(slidesPerViewVar, 10);
+
+            swipers['swiper-'+index] = new Swiper('.swiper-'+index,{
+                pagination: '.swiper-pagination-'+index,
+                paginationClickable: true,
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+                slidesPerView: slidesPerViewVar,
+                autoHeight:($t.is('[data-auto-height]'))?parseInt($t.data('auto-height'), 10):0,
+                loop: ($t.is('[data-loop]'))?parseInt($t.data('loop'), 10):0,
+                autoplay: ($t.is('[data-autoplay]'))?parseInt($t.data('autoplay'), 10):0,
+                breakpoints: ($t.is('[data-breakpoints]'))? { 767: { slidesPerView: parseInt($t.attr('data-xs-slides'), 10) }, 991: { slidesPerView: parseInt($t.attr('data-sm-slides'), 10) }, 1199: { slidesPerView: parseInt($t.attr('data-md-slides'), 10) }, 1500: {slidesPerView: parseInt($t.attr('data-lg-slides'), 10)} } : {},
+                initialSlide: ($t.is('[data-ini]'))?parseInt($t.data('ini'), 10):0,
+                speed: ($t.is('[data-speed]'))?parseInt($t.data('speed'), 10):500,
+                keyboardControl: true,
+                mousewheelControl: ($t.is('[data-mousewheel]'))?parseInt($t.data('mousewheel'), 10):0,
+                mousewheelReleaseOnEdges: true,
+                direction: ($t.is('[data-direction]'))?$t.data('direction'):'horizontal',
+                spaceBetween: ($t.is('[data-space]'))?parseInt($t.data('space'), 10):0,
+                centeredSlides: ($t.is('[data-centered]'))?parseInt($t.data('centered'), 10):0,
+            });
+            swipers['swiper-'+index].update();
+            initIterator++;
+        });
+        $('.swiper-container.swiper-control-top').each(function(){
+            swipers['swiper-'+$(this).attr('id')].params.control = swipers['swiper-'+$(this).closest('.swipers-couple-wrapper').find('.swiper-control-bottom').attr('id')];
+        });
+        $('.swiper-container.swiper-control-bottom').each(function(){
+            swipers['swiper-'+$(this).attr('id')].params.control = swipers['swiper-'+$(this).closest('.swipers-couple-wrapper').find('.swiper-control-top').attr('id')];
+        });
+    };
+
+    $( document ).ready(function() {  
+        _functions.initSwiper();
+              
         var how_blue_block = 0; 
         $('.how-blue-block').each(function(){
             if ($(this).height() > how_blue_block) { 
